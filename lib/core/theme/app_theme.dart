@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 
 /// AppTheme defines the complete dark and light theme for the portfolio.
@@ -20,54 +20,53 @@ class AppTheme {
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primaryDark,
         secondary: AppColors.primaryDark,
-        background: AppColors.darkBg,
         surface: AppColors.darkSurface,
         onPrimary: AppColors.darkBg,
-        onBackground: AppColors.darkTextPrimary,
         onSurface: AppColors.darkTextPrimary,
       ),
 
       // Typography — using Google Fonts Inter for a clean modern look
-      textTheme: GoogleFonts.interTextTheme(
-        const TextTheme(
-          // Hero name — large and bold
-          displayLarge: TextStyle(
-            fontSize: 48,
-            fontWeight: FontWeight.w600,
-            color: AppColors.darkTextPrimary,
-            letterSpacing: -1.5,
-          ),
-          // Section titles
-          headlineMedium: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.w600,
-            color: AppColors.darkTextPrimary,
-            letterSpacing: -0.5,
-          ),
-          // Card titles
-          titleLarge: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-            color: AppColors.darkTextPrimary,
-          ),
-          // Body text
-          bodyLarge: TextStyle(
-            fontSize: 16,
-            color: AppColors.darkTextMuted,
-            height: 1.6,
-          ),
-          bodyMedium: TextStyle(
-            fontSize: 14,
-            color: AppColors.darkTextMuted,
-            height: 1.6,
-          ),
-          // Small labels
-          labelSmall: TextStyle(
-            fontSize: 12,
-            color: AppColors.darkTextMuted,
-            letterSpacing: 0.5,
-          ),
+      textTheme:
+          //GoogleFonts.interTextTheme(
+          const TextTheme(
+        // Hero name — large and bold
+        displayLarge: TextStyle(
+          fontSize: 48,
+          fontWeight: FontWeight.w600,
+          color: AppColors.darkTextPrimary,
+          letterSpacing: -1.5,
         ),
+        // Section titles
+        headlineMedium: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.w600,
+          color: AppColors.darkTextPrimary,
+          letterSpacing: -0.5,
+        ),
+        // Card titles
+        titleLarge: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w500,
+          color: AppColors.darkTextPrimary,
+        ),
+        // Body text
+        bodyLarge: TextStyle(
+          fontSize: 16,
+          color: AppColors.darkTextMuted,
+          height: 1.6,
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: AppColors.darkTextMuted,
+          height: 1.6,
+        ),
+        // Small labels
+        labelSmall: TextStyle(
+          fontSize: 12,
+          color: AppColors.darkTextMuted,
+          letterSpacing: 0.5,
+        ),
+        //  ),
       ),
 
       // AppBar — transparent so it blends with background
@@ -78,7 +77,7 @@ class AppTheme {
       ),
 
       // Card styling
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.darkSurface,
         elevation: 0,
         shape: RoundedRectangleBorder(
@@ -108,55 +107,54 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
         primary: AppColors.primaryLight,
         secondary: AppColors.primaryLight,
-        background: AppColors.lightBg,
         surface: AppColors.lightSurface,
         onPrimary: AppColors.lightSurface,
-        onBackground: AppColors.lightTextPrimary,
         onSurface: AppColors.lightTextPrimary,
       ),
 
       // Typography — same font, different colours for light mode
-      textTheme: GoogleFonts.interTextTheme(
-        const TextTheme(
-          // Hero name
-          displayLarge: TextStyle(
-            fontSize: 48,
-            fontWeight: FontWeight.w600,
-            color: AppColors.lightTextPrimary,
-            letterSpacing: -1.5,
-          ),
-          // Section titles
-          headlineMedium: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.w600,
-            color: AppColors.lightTextPrimary,
-            letterSpacing: -0.5,
-          ),
-          // Card titles
-          titleLarge: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
-            color: AppColors.lightTextPrimary,
-          ),
-          // Body text
-          bodyLarge: TextStyle(
-            fontSize: 16,
-            color: AppColors.lightTextMuted,
-            height: 1.6,
-          ),
-          bodyMedium: TextStyle(
-            fontSize: 14,
-            color: AppColors.lightTextMuted,
-            height: 1.6,
-          ),
-          // Small labels
-          labelSmall: TextStyle(
-            fontSize: 12,
-            color: AppColors.lightTextMuted,
-            letterSpacing: 0.5,
-          ),
+      textTheme:
+          //GoogleFonts.interTextTheme(
+          const TextTheme(
+        // Hero name
+        displayLarge: TextStyle(
+          fontSize: 48,
+          fontWeight: FontWeight.w600,
+          color: AppColors.lightTextPrimary,
+          letterSpacing: -1.5,
+        ),
+        // Section titles
+        headlineMedium: TextStyle(
+          fontSize: 28,
+          fontWeight: FontWeight.w600,
+          color: AppColors.lightTextPrimary,
+          letterSpacing: -0.5,
+        ),
+        // Card titles
+        titleLarge: TextStyle(
+          fontSize: 18,
+          fontWeight: FontWeight.w500,
+          color: AppColors.lightTextPrimary,
+        ),
+        // Body text
+        bodyLarge: TextStyle(
+          fontSize: 16,
+          color: AppColors.lightTextMuted,
+          height: 1.6,
+        ),
+        bodyMedium: TextStyle(
+          fontSize: 14,
+          color: AppColors.lightTextMuted,
+          height: 1.6,
+        ),
+        // Small labels
+        labelSmall: TextStyle(
+          fontSize: 12,
+          color: AppColors.lightTextMuted,
+          letterSpacing: 0.5,
         ),
       ),
+      //   ),
 
       // AppBar
       appBarTheme: const AppBarTheme(
@@ -166,7 +164,7 @@ class AppTheme {
       ),
 
       // Card styling
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         color: AppColors.lightSurface,
         elevation: 0,
         shape: RoundedRectangleBorder(

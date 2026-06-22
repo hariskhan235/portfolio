@@ -8,7 +8,7 @@ import 'features/projects/bloc/projects_bloc.dart';
 import 'features/experience/bloc/experience_bloc.dart';
 import 'features/contact/bloc/contact_bloc.dart';
 import 'shared/widgets/theme_cubit.dart';
-import 'features/hero/view/home_page.dart';
+//import 'features/hero/view/home_page.dart';
 
 /// Root widget of the portfolio app.
 /// MultiBlocProvider makes all BLoCs available to every widget in the tree.
